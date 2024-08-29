@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TelescopePricePrint</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <!-- Custom fonts for this template-->
+    <link href="css/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <link href="css/site.css" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+    <!-- jsbarcode -->
+    <script src="js/jsbarcode/JsBarcode.all.min.js"></script>
+	
+    <!-- price printer -->
+    <script src="js/priceTagTelescope.js"></script>
+
+
+    
+    <style>
+        .vl {
+            border-left: 2px solid gray;
+            height: 70px;
+            width: 20px;
+            margin-top: 20px;
+        }
+    
+        .pricebox {
+            display: inline-flex;
+            margin: 0px;
+            padding: 20px;
+            max-width: 250px;
+            width: 240px;
+            height: 140px;
+            border-width: 1px;
+            border-color: LightGray;
+            border-style: solid;
+            box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+            text-align: center;
+            vertical-align: central;
+            flex: auto;
+            flex-direction: row;
+            justify-content: stretch;
+            box-sizing: border-box;
+        }
+    
+        .smallDiv {
+            vertical-align: central;
+        }
+    
+        .div-vertical {
+            width: 15%;
+            float: right;
+            -webkit-transform: translate(10px,0)
+        }
+    
+        .div-horiz {
+            width: 85%;
+            float: left;
+        }
+    
+       
+    
+        .smalltag {
+            display: inline-flex;
+            margin: 0px;
+            padding: 20px;
+            max-width: 320px;
+            width: 300px;
+            height: 110px;
+            max-height: 110px;
+            border-width: 1px;
+            border-color: LightGray;
+            border-style: solid;
+            box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+            text-align: center;
+            vertical-align: central;
+            flex: auto;
+            flex-direction: row;
+            justify-content: stretch;
+            box-sizing: border-box;
+        }
+    </style>
+
+</head>
+<body>
+    <button class=" bi-printer  btn btn-primary h-auto nonprintable" onclick="window.print()"> Print at HP printer </button>
+
+<div id="output"></div>
+
+</body>
+</html>
