@@ -109,7 +109,7 @@ $(document).ready(function() {
                     <tbody>
                         <tr>
                             <td style="text-align:left">
-                                <div style="font-weight:normal ; font-size:Medium;-webkit-transform: translate(0,-10px) ">
+                                <div style="font-weight:normal ; font-size:Small;-webkit-transform: translate(0,-10px) ">
                                     SAR
                                 </div>
                             </td>
