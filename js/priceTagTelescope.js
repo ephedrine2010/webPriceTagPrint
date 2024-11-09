@@ -12,11 +12,12 @@ $(document).ready(function() {
       const urlParams = new URLSearchParams(queryString);
 
       const text= urlParams.get('text');
-      
-      console.log(text);
+      //console.log('first receive');
 
+      //console.log(text);
+      //console.log('first receive');
 
-      console.log(text);
+      //console.log(text);
       var receivedData=text.split("***");
       //console.log(receivedData);
       
@@ -124,7 +125,7 @@ $(document).ready(function() {
 
                         <tr>
                             <td style="text-align:left ">
-                                <div style="font-weight: bold; font-family: Arial Black; font-size: 25px; -webkit-transform: translate(0,-15px) ">
+                                <div style="font-weight: bold; font-family: Arial Black; font-size: 23px; -webkit-transform: translate(0,-15px) ">
                                   ${item.price}
                                 </div>
                             </td>
@@ -133,7 +134,7 @@ $(document).ready(function() {
 
                         <tr>
                             <td colspan="2" style="text-align:left">
-                                <div style="font-weight: bold; font-size: 12px; -webkit-transform: translate(0,-15px) ">
+                                <div style="font-weight: bold; font-size: 11px; -webkit-transform: translate(0,-15px) ">
                                   ${item.itemNameEn}
                                 </div>
 
@@ -141,7 +142,7 @@ $(document).ready(function() {
                         </tr>
                         <tr>
                             <td colspan="2" style="text-align:left">
-                                <div style="font-weight: bold; font-size: 12px; -webkit-transform: translate(0,-15px) ">
+                                <div style="font-weight: bold; font-size: 11px; -webkit-transform: translate(0,-15px) ">
                                   ${item.itemNameAr}
                                 </div>
 
