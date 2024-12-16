@@ -11,7 +11,9 @@ $(document).ready(function() {
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
 
-      const text= urlParams.get('text');
+      let text= urlParams.get('text');
+      //text="100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20";
+      
       //console.log('first receive');
 
       //console.log(text);
@@ -100,7 +102,7 @@ $(document).ready(function() {
       }
   
           
-      //price template function
+      //price template function   font-family: Arial Black;
       function createHTML(item) {
         return`
           <!-- template 3 -->
@@ -125,7 +127,7 @@ $(document).ready(function() {
 
                         <tr>
                             <td style="text-align:left ">
-                                <div style="font-weight: bold; font-family: Arial Black; font-size: 23px; -webkit-transform: translate(0,-15px) ">
+                                <div style="font-weight: bold; font-size: 23px; -webkit-transform: translate(0,-15px) ">
                                   ${item.price}
                                 </div>
                             </td>
