@@ -70,10 +70,10 @@
             display: inline-flex;
             margin: 0px;
             padding: 20px;
-            max-width: 320px;
-            width: 300px;
-            height: 110px;
-            max-height: 110px;
+            max-width: 250px;
+            width: 235px;
+            height: 100px;
+            max-height: 100px;
             border-width: 1px;
             border-color: LightGray;
             border-style: solid;
@@ -91,7 +91,45 @@
 <body>
     <button class=" bi-printer  btn btn-primary h-auto nonprintable" onclick="window.print()"> Print at HP printer </button>
 
-<div id="output"></div>
+<!-- ================= checkbox ==================== -->
+<div class="nonprintable">
+    <div class="form-check" style="visibility:visible">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radioLargetag" checked>
+        <label class="form-check-label" for="flexRadioDefault1">
+            Default Price tag
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radioSmalltag" >
+        <label class="form-check-label" for="flexRadioDefault2">
+            Small size price tag (for small ruller)
+        </label>
+    </div>
+</div>
+
+<div id="outputLarge"></div>
+<div id="outputSmall" style="display:none"></div>
+<script>
+    $(document).ready(function () {
+        //show small
+        $('#radioSmalltag').click(function () {
+            $('#outputSmall').css('display', 'inline-block');
+            $('#outputLarge').css('display', 'none');
+            console.log('small tag clicked');
+        })
+
+        //show large
+        $('#radioLargetag').click(function () {
+            $('#outputSmall').css('display', 'none');
+            $('#outputLarge').css('display', 'inline-block');
+            console.log('large tag clicked');
+        })
+
+    })
+
+    
+
+</script>
 
 </body>
 </html>

@@ -61,10 +61,14 @@ $(document).ready(function() {
             item.item_barcode = qrCode;
           }
 
-      const outputDiv = document.getElementById("output");
+      const LargePriceTag = document.getElementById("outputLarge");
+      const SmallPriceTag = document.getElementById("outputSmall");
       items.forEach(item => {
         //console.log(item.item_barcode);
-        outputDiv.innerHTML += createHTML(item);
+        //outputDiv.innerHTML += createHTML(item);
+        LargePriceTag.innerHTML += LargeSizeTagHTML(item);
+        SmallPriceTag.innerHTML += smallSizeTagHTML(item);
+
       });
 
       
@@ -103,7 +107,7 @@ $(document).ready(function() {
   
           
       //price template function   font-family: Arial Black;
-      function createHTML(item) {
+      function LargeSizeTagHTML(item) {
         return`
           <!-- template 3 -->
           <div class="col pricebox thickborder">
@@ -165,6 +169,75 @@ $(document).ready(function() {
                 </div>
             </div>
             </div>
+  
+          `
+      }
+
+
+      //============== small size template
+      //price template function   font-family: Arial Black;
+      function smallSizeTagHTML(item) {
+        return`
+          <!-- template 3 -->
+          <div class="col smalltag thickborder">
+            <div class="div-horiz" style="box-sizing: border-box;">
+              <table style="-webkit-transform: translate(0,-15px)">
+                  <tbody>
+                      <tr>
+                          <td style="text-align:left">
+                              <div style="font-weight: normal; font-size: xx-small ">
+                                  SAR
+                              </div>
+                          </td>
+                          <td rowspan="2" style="text-align: right; -webkit-transform: translate(0,-15px)">
+                              <div style="font-size:xx-small">
+                                  <br />${item.vatEntxt}
+                                  <br />${item.vatArtxt}
+                              </div>
+
+                          </td>
+                      </tr>
+
+                      <tr>
+                          <td style="text-align:left ">
+                              <div style="font-weight: bold; Black; font-size: 24px; -webkit-transform: translate(0,-10px) ">
+                                  ${item.price}
+                              </div>
+                          </td>
+
+                      </tr>
+
+                      <tr>
+                          <td colspan="2" style="text-align:left">
+                              <div style="font-weight: bold; font-size: 10px; -webkit-transform: translate(0,-15px) ">
+                                ${item.itemNameEn}
+                              </div>
+
+                          </td>
+                      </tr>
+                      <tr>
+                          <td colspan="2" style="text-align:left">
+                              <div style="font-weight: bold; font-size: 10px; -webkit-transform: translate(0,-15px) ">
+                                ${item.itemNameAr}
+                              </div>
+
+                          </td>
+                      </tr>
+
+                  </tbody>
+              </table>
+
+            </div>
+
+              <!-- barcode dive -->
+                <div class="div-vertical">
+                    <div class="fa-rotate-90">
+                        <img src="${item.item_barcode}" alt="qrocde" style="height: 15px; width: 80px; -webkit-transform: translate(-10px,0)" />
+                        <br />
+                        <div style="font-size: xx-small; -webkit-transform: translate(5px,0)"> ${item.item_Number} </div>
+                    </div>
+                </div>
+          </div>
   
           `
       }
