@@ -12,7 +12,7 @@ $(document).ready(function() {
       const urlParams = new URLSearchParams(queryString);
 
       let text= urlParams.get('text');
-      //text="100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20";
+      text="100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20100015980,Panadol-Extra%20Tablet%2024%20pcs,بانادول%20اكسترا%2024%20قرص,8.0,0%20***%20";
       
       //console.log('first receive');
 
@@ -200,7 +200,7 @@ $(document).ready(function() {
 
                       <tr>
                           <td style="text-align:left ">
-                              <div style="font-weight: bold; Black; font-size: 24px; -webkit-transform: translate(0,-10px) ">
+                              <div style="font-weight: bold; Black; font-size: 20px; -webkit-transform: translate(0,-10px) ">
                                   ${item.price}
                               </div>
                           </td>
@@ -209,7 +209,7 @@ $(document).ready(function() {
 
                       <tr>
                           <td colspan="2" style="text-align:left">
-                              <div style="font-weight: bold; font-size: 10px; -webkit-transform: translate(0,-15px) ">
+                              <div style="font-weight: bold; font-size: 8px; -webkit-transform: translate(0,-15px) ">
                                 ${item.itemNameEn}
                               </div>
 
@@ -217,7 +217,7 @@ $(document).ready(function() {
                       </tr>
                       <tr>
                           <td colspan="2" style="text-align:left">
-                              <div style="font-weight: bold; font-size: 10px; -webkit-transform: translate(0,-15px) ">
+                              <div style="font-weight: bold; font-size: 8px; -webkit-transform: translate(0,-15px) ">
                                 ${item.itemNameAr}
                               </div>
 
@@ -232,9 +232,9 @@ $(document).ready(function() {
               <!-- barcode dive -->
                 <div class="div-vertical">
                     <div class="fa-rotate-90">
-                        <img src="${item.item_barcode}" alt="qrocde" style="height: 15px; width: 80px; -webkit-transform: translate(-10px,0)" />
+                        <img src="${item.item_barcode}" alt="qrocde" style="height: 15px; width: 70px; -webkit-transform: translate(-20px,0)" />
                         <br />
-                        <div style="font-size: xx-small; -webkit-transform: translate(5px,0)"> ${item.item_Number} </div>
+                        <div style="font-size: xx-small; -webkit-transform: translate(-10px,0)"> ${item.item_Number} </div>
                     </div>
                 </div>
           </div>
